@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNUniverse | Khám phá vũ trụ tri thức</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FAFAFA; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(20px); }
+        .gradient-text { background: linear-gradient(135deg, #8B5CF6, #6366F1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-shadow { box-shadow: 0 4px 20px -2px rgba(99, 102, 241, 0.08); }
+        .hover-lift { transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+        .hover-lift:hover { transform: translateY(-10px); }
+        .purple-gradient { background: linear-gradient(135deg, #7C3AED 0%, #4F46E5 100%); }
+    </style>
+</head>
+<body class="text-slate-900 selection:bg-violet-200">
+
+    <nav class="fixed w-full z-50 glass border-b border-slate-100/50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter gradient-text">VNUniverse 🚀</div>
+            <div class="hidden md:flex space-x-8 font-medium text-sm text-slate-600">
+                <a href="#quiz" class="hover:text-violet-600 transition">Hệ thống Quiz</a>
+                <a href="#xp" class="hover:text-violet-600 transition">Huy hiệu</a>
+                <a href="#arena" class="hover:text-violet-600 transition">Đấu trường</a>
+                <a href="#profile" class="hover:text-violet-600 transition">Hồ sơ</a>
+                <a href="#feedback" class="hover:text-violet-600 transition">Góp ý</a>
+            </div>
+            <button class="bg-slate-900 text-white px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-violet-600 transition duration-300 shadow-lg">Khám phá ngay</button>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24 px-6 max-w-6xl mx-auto">
+        <section class="text-center mb-32">
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-8 tracking-tighter">
+                Học tập là một <br><span class="gradient-text">vũ trụ</span>
+            </h1>
+            <p class="text-xl text-slate-500 mb-12 max-w-2xl mx-auto">Chào mừng bạn đến với VNUniverse. Nơi mỗi kiến thức bạn chinh phục là một vì sao mới trong hành trình tri thức cá nhân.</p>
+            <div class="flex justify-center gap-4">
+                <button class="purple-gradient text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-all shadow-xl shadow-violet-200">Bắt đầu chuyến du hành</button>
+            </div>
+        </section>
+
+        <section id="quiz" class="mb-32">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-4xl">🧩</span>
+                <h2 class="text-4xl font-bold tracking-tight">Hệ thống Quiz theo cấp độ</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-[2rem] card-shadow border border-slate-100 hover-lift">
+                    <div class="text-4xl mb-4">🌱</div>
+                    <h3 class="text-xl font-bold mb-2">Người mới</h3>
+                    <p class="text-slate-500 text-sm mb-4">Khởi động tư duy với các khái niệm cơ bản. Dành cho những nhà thám hiểm mới bắt đầu.</p>
+                    <span class="text-violet-600 font-bold bg-violet-50 px-3 py-1 rounded-full text-xs uppercase tracking-wider">Cấp 1-5</span>
+                </div>
+                <div class="bg-white p-8 rounded-[2rem] card-shadow border border-slate-100 hover-lift">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-bold mb-2">Nhà chinh phục</h3>
+                    <p class="text-slate-500 text-sm mb-4">Tình huống thực tế, thách thức tư duy logic trong đời sống. Bứt phá giới hạn bản thân.</p>
+                    <span class="text-violet-600 font-bold bg-violet-50 px-3 py-1 rounded-full text-xs uppercase tracking-wider">Cấp 6-15</span>
+                </div>
+                <div class="bg-white p-8 rounded-[2rem] card-shadow border border-slate-100 hover-lift">
+                    <div class="text-4xl mb-4">💎</div>
+                    <h3 class="text-xl font-bold mb-2">Huyền thoại</h3>
+                    <p class="text-slate-500 text-sm mb-4">Thử thách cao cấp dành cho chuyên gia. Nơi kiến thức không có giới hạn.</p>
+                    <span class="text-violet-600 font-bold bg-violet-50 px-3 py-1 rounded-full text-xs uppercase tracking-wider">Cấp 16+</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="xp" class="mb-32 grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-10 rounded-[2rem] card-shadow border border-slate-100">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-3xl">🏆</span>
+                    <h2 class="text-2xl font-bold">XP & Huy hiệu</h2>
+                </div>
+                <p class="text-slate-500 mb-8">Mỗi bài học hoàn thành là một bước tiến. Thu thập XP, mở khóa huy hiệu độc quyền và khẳng định đẳng cấp.</p>
+                <div class="space-y-4">
+                    <div class="h-4 bg-slate-100 rounded-full overflow-hidden">
+                        <div class="purple-gradient h-full w-[85%] rounded-full"></div>
+                    </div>
+                    <div class="flex justify-between text-sm font-bold text-violet-600">
+                        <span>850/1000 XP</span>
+                        <span>Level: Nhà Chinh Phục</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="arena" class="bg-white p-10 rounded-[2rem] card-shadow border border-slate-100">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-3xl">⚔️</span>
+                    <h2 class="text-2xl font-bold">Đấu trường kiến thức</h2>
+                </div>
+                <p class="text-slate-500 mb-8">Tham gia các sự kiện đấu trí hàng tuần. Cạnh tranh lành mạnh để đứng đầu bảng xếp hạng VNUniverse.</p>
+                <div class="flex gap-2">
+                    <button class="flex-1 bg-violet-100 text-violet-700 py-3 rounded-2xl font-semibold hover:bg-violet-200 transition">Bảng xếp hạng</button>
+                    <button class="flex-1 bg-violet-600 text-white py-3 rounded-2xl font-semibold hover:bg-violet-700 transition">Vào đấu trường</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="profile" class="grid md:grid-cols-2 gap-8 mb-32">
+            <div class="bg-white p-10 rounded-[2rem] card-shadow border border-slate-100">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-3xl">📅</span>
+                    <h2 class="text-2xl font-bold">Thử thách ngày mới</h2>
+                </div>
+                <div class="space-y-4">
+                    <label class="flex items-center gap-4 p-4 border border-slate-100 rounded-2xl hover:border-violet-300 transition cursor-pointer">
+                        <input type="checkbox" class="w-6 h-6 accent-violet-600">
+                        <span class="font-medium">Hoàn thành 3 quiz môn Toán học</span>
+                    </label>
+                    <label class="flex items-center gap-4 p-4 border border-slate-100 rounded-2xl hover:border-violet-300 transition cursor-pointer">
+                        <input type="checkbox" class="w-6 h-6 accent-violet-600">
+                        <span class="font-medium">Học từ vựng trong 10 phút</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white p-10 rounded-[2rem] card-shadow border border-slate-100">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-3xl">👤</span>
+                    <h2 class="text-2xl font-bold">Hồ sơ phi hành gia</h2>
+                </div>
+                <div class="flex items-center gap-6">
+                    <div class="w-20 h-20 rounded-full bg-violet-100 flex items-center justify-center text-4xl">👨‍🚀</div>
+                    <div>
+                        <h3 class="font-bold text-lg">Nguyễn Văn A</h3>
+                        <p class="text-slate-500 text-sm">Level: Người chinh phục vũ trụ</p>
+                    </div>
+                </div>
+                <div class="mt-8 pt-6 border-t border-slate-100 grid grid-cols-2 gap-4">
+                    <div class="text-center">
+                        <div class="text-2xl font-black">124</div>
+                        <div class="text-xs text-slate-500 uppercase tracking-widest">Số quiz đã giải</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-black">15</div>
+                        <div class="text-xs text-slate-500 uppercase tracking-widest">Huy hiệu</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="feedback" class="mb-32">
+            <div class="bg-slate-900 p-10 md:p-16 rounded-[3rem] text-white text-center shadow-2xl">
+                <h2 class="text-3xl font-bold mb-4">Bạn nghĩ gì về VNUniverse?</h2>
+                <p class="text-slate-400 mb-8 max-w-lg mx-auto">Mọi ý kiến của bạn đều là những vì sao quý giá giúp chúng tôi kiến tạo vũ trụ tri thức hoàn thiện hơn.</p>
+                <form class="max-w-xl mx-auto space-y-4" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã gửi đóng góp!');">
+                    <textarea rows="4" placeholder="Chia sẻ cảm nghĩ của bạn tại đây..." class="w-full p-4 rounded-2xl bg-slate-800 border border-slate-700 focus:ring-2 focus:ring-violet-500 outline-none transition placeholder-slate-500"></textarea>
+                    <button type="submit" class="bg-violet-600 hover:bg-violet-500 text-white px-10 py-3 rounded-full font-bold transition-all hover:scale-105 shadow-lg">Gửi góp ý</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="text-center text-slate-400 pt-10 border-t border-slate-200">
+            <p>© 2026 VNUniverse. Khám phá vũ trụ tri thức của riêng bạn.</p>
+        </footer>
+    </main>
+
+    <script>
+        // Smooth scroll adjustment
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
